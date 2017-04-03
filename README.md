@@ -37,7 +37,7 @@ Test
 Test with 'hot_wire_bom.tsv':
 ```
 $ python main.py
-$ hot_wire_bom.tsv
+$ Path to BOM file (format .tsv): hot_wire_bom.tsv
 ```
 
 BOM Keywords
