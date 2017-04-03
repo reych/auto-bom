@@ -29,7 +29,7 @@ python main.py
 3. Follow prompt to enter BOM path (this is a relative path).
  * Example:
  ```
- $ hot_wire_bom.tsv
+ $ Path to BOM file (format .tsv): hot_wire_bom.tsv
  ```
 
 Test
