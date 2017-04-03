@@ -5,9 +5,9 @@ A script for automating form completion from a .tsv file to the Viterbi RTHBC Pu
 Setup
 -----------------------------------------------
 * Python version 2.7.10 or higher
-..* https://www.python.org/downloads/
+ * https://www.python.org/downloads/
 * Selenium webdriver for Python version 3.0.0
-..* https://pypi.python.org/pypi/selenium
+ * https://pypi.python.org/pypi/selenium
 * Google Chrome browser
 
 
@@ -35,8 +35,10 @@ python main.py
 Test
 -----------------------------------------------
 Test with 'hot_wire_bom.tsv':
+```
 $ python main.py
 $ hot_wire_bom.tsv
+```
 
 BOM Keywords
 -----------------------------------------------

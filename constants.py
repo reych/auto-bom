@@ -1,0 +1,7 @@
+PART = "part"
+UNIT_COST = "unit cost"
+VENDOR = "vendor"
+QUANTITY_TO_ORDER = "quantity to order"
+PART_NUMBER = "part number"
+WEBSITE = "website"
+NOTES = "notes"

@@ -1,3 +1,4 @@
+from constants import *
 class Item:
     notes = ""
     name = ""
@@ -34,43 +35,43 @@ class BomParser:
                 rowLength = len(ls)
 
                 # Name.
-                item.name = ls[self.categories["part"]] if (self.categories["part"] < rowLength) else ""
+                item.name = ls[self.categories[PART]] if (self.categories[PART] < rowLength) else ""
 
                 # Unit cost.
-                if ("unit cost" in self.categories and self.categories["unit cost"] < rowLength):
+                if (UNIT_COST in self.categories and self.categories[UNIT_COST] < rowLength):
                     # check formatting of cost.
-                    cost = ls[self.categories["unit cost"]]
+                    cost = ls[self.categories[UNIT_COST]]
                     item.cost = self.__formatNumber(cost)
                 else:
                     item.cost = 0;
 
                 # Vendor.
-                if ("vendor" in self.categories and self.categories["vendor"] < rowLength):
-                    item.vendor = ls[self.categories["vendor"]]
+                if (VENDOR in self.categories and self.categories[VENDOR] < rowLength):
+                    item.vendor = ls[self.categories[VENDOR]]
                 else:
                     item.vendor = ""
 
                 # Quantity to order.
-                if("quantity to order" in self.categories and self.categories["quantity to order"] < rowLength):
-                    item.quantity_to_order = int(ls[self.categories["quantity to order"]])
+                if(QUANTITY_TO_ORDER in self.categories and self.categories[QUANTITY_TO_ORDER] < rowLength):
+                    item.quantity_to_order = int(ls[self.categories[QUANTITY_TO_ORDER]])
                 else:
                     item.quantity_to_order = 0;
 
                 # Part number.
-                if("part number" in self.categories and self.categories["part number"] < rowLength):
-                    item.part_number = ls[self.categories["part number"]]
+                if(PART_NUMBER in self.categories and self.categories[PART_NUMBER] < rowLength):
+                    item.part_number = ls[self.categories[PART_NUMBER]]
                 else:
                     item.part_number = ""
 
                 # Website.
-                if("website" in self.categories and self.categories["website"] < rowLength):
-                    item.website = ls[self.categories["website"]]
+                if(WEBSITE in self.categories and self.categories[WEBSITE] < rowLength):
+                    item.website = ls[self.categories[WEBSITE]]
                 else:
                     item.website = ""
 
                 # Notes.
-                if("notes" in self.categories and self.categories["notes"] < rowLength):
-                    item.notes = ls[self.categories["notes"]]
+                if(NOTES in self.categories and self.categories[NOTES] < rowLength):
+                    item.notes = ls[self.categories[NOTES]]
                 else:
                     item.notes = ""
 

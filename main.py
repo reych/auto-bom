@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 import sys
 import os
 
-from bom_parser2 import *
+from bom_parser import *
 #Requestor
 admin_name = "Alec Kanyuck"
 admin_email = "alec@gmail.com"
