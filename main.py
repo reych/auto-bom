@@ -22,9 +22,15 @@ while (validFile == 0):
         bomFile = input("Path to BOM file (format .tsv): ")
     if os.path.isfile(bomFile):
         validFile = 1
-        print bomFile
+        if sys.version_info < (3, 0):
+            print bomFile
+        else:
+            print(bomFile)
     else:
-        print "Incorrect file path"
+        if sys.version_info < (3, 0):
+            print "Incorrect file path"
+        else:
+            print("Incorrect file path")
 
 
 driver = webdriver.Chrome("./chromedriver")
