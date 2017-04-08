@@ -2,11 +2,14 @@ BOM Parser
 ===============================================
 A script for automating form completion from a .tsv file to the Viterbi RTHBC Purchase Request website.
 
+NOTE UPDATES
+-----------------------------------------------
+Since Python updated to Python 3, which is backwards incompatible, you should run main3.py instead of main.py. Otherwise, if you have Python 2.7.10 and up, it should still work.
 Setup
 -----------------------------------------------
-* Python version 2.7.10 or higher
+* Python version 2.7.10+, Python version 3
  * https://www.python.org/downloads/
-* Selenium webdriver for Python version 3.0.0
+* Selenium webdriver
  * https://pypi.python.org/pypi/selenium
 * Google Chrome browser
 
@@ -25,6 +28,10 @@ Usage
 2. Run script in Terminal:
 ```
 python main.py
+```
+OR (for python 3):
+```
+python main3.py
 ```
 3. Follow prompt to enter BOM path (this is a relative path).
  * Example:

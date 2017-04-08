@@ -79,8 +79,6 @@ class BomParser:
                 #print i.name
 
     def getItems(self):
-        for i in self.items:
-            print i.cost
         return self.items
 
     def getConcatDescription(self):

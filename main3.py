@@ -12,19 +12,16 @@ pi_name = "Satyandra Gupta"
 #Vendor
 vendor_name = "Vendor Name"
 #Items: do some sort of struct
-print ("Selenium webdriver Version: %s" % (webdriver.__version__))
+print(("Selenium webdriver Version: %s" % (webdriver.__version__)))
 
 validFile = 0;
 while (validFile == 0):
-    if sys.version_info < (3, 0):
-        bomFile = raw_input("Path to BOM file (format .tsv): ")
-    else:
-        bomFile = input("Path to BOM file (format .tsv): ")
+    bomFile = input("Path to BOM file (format .tsv): ")
     if os.path.isfile(bomFile):
         validFile = 1
-        print bomFile
+        print(bomFile)
     else:
-        print "Incorrect file path"
+        print("Incorrect file path")
 
 
 driver = webdriver.Chrome("./chromedriver")
