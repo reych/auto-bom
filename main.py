@@ -21,7 +21,7 @@ while (validFile == 0):
     else:
         bomFile = input("Path to BOM file (format .tsv): ")
     if os.path.isfile(bomFile):
-        validFile = 1;
+        validFile = 1
         print bomFile
     else:
         print "Incorrect file path"
